@@ -17,7 +17,7 @@
 							<?php } ?>
 				<form method="GET" action="">
 					<div class="row">
-						<div class="col-12 	m-4">
+						<div class="col-12 	mt-4 mb-4">
 							<input class="form-control" type="text" name="cpf" placeholder="Digite seu CPF" value="<?=(isset($data['cpf'])?$data['cpf']:'')?>" />
 						</div>
 						<div class="col-2">
@@ -26,7 +26,7 @@
 					</div>
 				</form>
 			</div>
-			<div class="col-12 col-sm-12 col-md-6">
+			<div class="col-12 col-sm-12 col-md-5 ms-4">
 				<table class="table table-hover table-dark">
 					<thead>
 						<tr>
@@ -37,7 +37,7 @@
 					</thead>
 				</table>
 			</div>
-			<div class="col-12 col-sm-12 col-md-6">
+			<div class="col-12 col-sm-12 col-md-5 ms-4">
 				<table class="table table-hover table-dark">
 					<thead>
 						<tr>
