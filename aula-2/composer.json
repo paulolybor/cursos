@@ -1,0 +1,9 @@
+{
+    "name": "root/aula-2",
+    "description": "Controle de opera\u0000\u0000es",
+    "type": "project",
+    "license": "MIT",
+    "require": {
+        "twbs/bootstrap": "^5.0"
+    }
+}
