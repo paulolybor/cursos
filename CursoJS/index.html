@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>JavaScript</title>
+</head>
+<body>
+	<div class="container">
+		<div class="center">
+		<h1>Treinamento JS</h1>
+		<p>Alinhado á esquerda</p>
+		</div>
+		<h3>Este arquivo é para fazer testes de JS</h3>
+		<br>
+		<p>Então você pode clicar no botão abaixo, e ver o resultado.</p>
+		<br>
+		<button type="button" class="botao" onclick="showThis()">Exibir</button>
+		<button type="button" class="botao" onclick="noShowThis()">Apagar</button>
+		<br>
+		<div class="altura">
+		<p id="showHere"></p>
+		<br>
+		</div>
+	</div>
+<script type="text/javascript">
+	function showThis() {
+		document.getElementById('showHere').innerHTML = "Só Isso!!!! <br> Exibe um texto.";
+	}
+	function noShowThis() {
+		document.getElementById('showHere').innerHTML = "";
+	}
+</script>
+
+<style type="text/css">
+	p {
+		text-align: left;
+	}
+	.container {
+		background-color: #eee;
+		max-width: 1100px;
+		width: 80%;
+		margin: 0 auto;
+		padding: 5px 30px 10px 30px;
+		border: none;
+	}
+	.center {
+		position: relative;
+		width: 100%;
+		float: left;
+		text-align: center;
+		color: blueviolet;
+	}
+	.altura {
+		min-height: 80px;
+	}
+	.botao {
+		width: 120px;
+		height: 40px;
+		background-color: yellow;
+		color: darkgreen;
+		border: none;
+		margin-left: 10px;
+		margin-right: 10px;
+	}
+	.botao:hover {
+		background-color: blueviolet;
+		color: white;
+	}
+	
+
+</style>
+</body>
+</html>

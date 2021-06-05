@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Grid Bootstrap</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+</head>
+
+
+
+
+<!-- https://www.youtube.com/watch?v=VUAReozpoDo Abertura e container até 2min
+
+Nunca criar colunas dentro de div coluna, mas criar as colunas dentro de div rows (ir acrescentando div class row nos aninhamentos.
+
+Exemplo -->
+
+<body>
+<div class="container">
+	<div class="row">
+		<div class="col-6">
+			<div class="red-background">
+				<div class="row">
+					<div class="col-6">
+						<div class="blue-background">
+						<p>texto de teste de colunas</p>
+						</div>
+					</div>
+					<div class="col-6">
+						<p>texto de teste de colunas</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="col-6">
+			<div class="row">
+				<div class="col-6">
+					<p>texto de teste de colunas</p>
+				</div>
+				<div class="col-6">
+					<p>texto de teste de colunas</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+
+<!-- Responsividade 
+
+* 	Extra small 	Small 		Medium 		Large 		Extra large
+		<576px		>=576px		>=768px		>=992px		>=1200
+container none		540px		720px		960px		1140px
+		.col-		.col-sm-	.col-md-	.col-lg-	.col-xl-
+
+O bootstrap sempre pega a maior resolução setada.
+Nunca colocar as cores diretamente nas colunas, mas cirar elementos para isso
+
+se eu usar .col-md- e .col-lg-, por exemplo, e não usar col-12, ele vai agir como se tivesse usando, isto é, o bootstrap assume o col-12 por padrão.
+Não precisa ficar setando col-12 toda hora.
+-->
+
+<div class="container">
+	<div class="row">
+		<div class="col-12 col-sm-6 col-md-4 col-xl-2">
+			<p class="red-background">Teste</p>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-xl-2 ">
+			<p class="blue-background">Teste</p>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-xl-2">
+			<p class="red-background">Teste</p>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-xl-2 ">
+			<p class="blue-background">Teste</p>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-xl-2">
+			<p class="red-background">Teste</p>
+		</div>
+		<div class="col-12 col-sm-6 col-md-4 col-xl-2 ">
+			<p class="blue-background">Teste</p>
+		</div>
+	</div>
+	<div class="row">
+		<div class="offset-2 col-10">
+			<div class="red-background centralizar">
+				<p>Teste</p>
+			</div>
+		</div>
+		
+	</div>
+
+	
+</div>
+
+
+</body>
+

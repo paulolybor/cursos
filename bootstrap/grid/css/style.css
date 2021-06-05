@@ -1,0 +1,16 @@
+.red-background,
+.blue-background {
+	/*height: 200px;*/
+	margin-bottom: 8px;
+}
+
+.red-background {
+	background: red;
+}
+
+.blue-background {
+	background: blueviolet;
+}
+.centralizar {
+	text-align: center;
+}
