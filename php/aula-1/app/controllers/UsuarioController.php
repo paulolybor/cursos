@@ -1,4 +1,4 @@
-<?php 
+ <?php 
 
 $nome = $_POST['nome'];
 $email = 'teste@teste.com';

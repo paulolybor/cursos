@@ -6,6 +6,7 @@
 </head>
 <body>
 	<h1>Acessar o Sistema</h1>
+	<!--<?=__DIR__;?>-->
 	<form method="POST" action="../controllers/UsuarioController.php">
 		
 		<input type="text" name="nome" placeholder="Seu nome">
