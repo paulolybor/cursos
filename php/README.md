@@ -17,5 +17,19 @@ Define ..dependencies...(require-dev): no
 Confirm: yes
 
 //Para instalar Bootstrap
+(ver se precisa composer install toda vez)
 composer require twbs/bootstrap
  
+
+
+
+	--------------------------------
+	css sempre no header
+		O charset sempre tem que ser o primeiro
+
+	js sempre no footer
+------------------------------------
+
+
+
+	//die(__FILE__.__LINE__);

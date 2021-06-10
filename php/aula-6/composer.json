@@ -1,0 +1,10 @@
+{
+    "name": "root/aula-6",
+    "description": "Calculo Porcentagem",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "RC",
+    "require": {
+        "twbs/bootstrap": "^5.0"
+    }
+}

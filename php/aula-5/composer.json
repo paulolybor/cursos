@@ -1,0 +1,8 @@
+{
+    "name": "root/aula-5",
+    "description": "C\u0000lculo de Porcentagem",
+    "type": "project",
+    "license": "MIT",
+    "minimum-stability": "RC",
+    "require": {}
+}
