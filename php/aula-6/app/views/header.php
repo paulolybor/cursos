@@ -26,11 +26,11 @@
 		          <a class="nav-link" href="?p=division">Divisão</a>
 		        </li>
 		        <li class="nav-item">
-		          <a class="nav-link" href="?p=subtration" tabindex="-1" aria-disabled="true">Subtração</a>
+		          <a class="nav-link" href="?p=subtraction" tabindex="-1" aria-disabled="true">Subtração</a>
 		        </li>
 		      </ul>
 		    </div>
 		  </div>
 		</nav>
 	</div>
-</div>
+	

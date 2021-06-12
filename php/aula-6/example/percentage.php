@@ -1,20 +1,18 @@
-<?php 
-$valor = 10000.00;
-$minimo = 5;
-$maximo = 30;
-$fracao = 1;
-$resultado = array();
 
-for ($i=$minimo; $i <= $maximo; $i = $i+$fracao) { 
-	$resultado[] = array(
-						'Base' => $valor,
-						'Porcentagem' => $i,
-						'Desconto' => $valor*($i/100),
-						'Valor' => $valor - ($valor*($i/100))
-	);
 
-}
-
-phpinfo();
-echo '<pre>';
-var_dump($resultado);	
+<table>
+	<tr>
+		<td>Valor Base</td>
+		<td>Desc %</td>
+		<td>Desc Valor</td>
+		<td>Valor Final</td>
+	</tr>
+	<?php foreach ($resultado as $key => $value) { ?>
+	<tr>
+		<td><?=$value['Base']?></td>
+		<td><?=$value['Porcentagem']?></td>
+		<td><?=$value['Desconto']?></td>
+		<td><?=$value['Valor']?></td>
+	</tr>
+<?php } ?>
+</table>
