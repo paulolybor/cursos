@@ -65,6 +65,8 @@ function fdivisao($data) {
 		require_once(BASE_DIR.'app/views/calculations/'.$data['p'].'.php');
 }
 
+
+//------------------------------------------------------------------
 //verifica se foi clicado no menu
 if (isset($_GET['p'])) {
 	switch ($_GET['p']) {
@@ -86,3 +88,4 @@ if (isset($_GET['p'])) {
 	$resultado = array();
 	require_once(BASE_DIR."app/views/calculations/percentage.php");	
 }
+//-------------------------------------------------------------------
