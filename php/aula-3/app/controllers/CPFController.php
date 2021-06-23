@@ -1,4 +1,5 @@
 <?php 
+
 //Carregando funções globais
 require_once(BASE_DIR.'/app/core/Controller.php');
 
@@ -53,7 +54,6 @@ function rangeCPF($cpf) {
 }
 
 // Verifico se existe requisição de função
-
 if (isset($_GET['op'])) {
 	$data = rangeCPF($_GET['cpf']);
 }

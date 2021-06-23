@@ -5,7 +5,7 @@
  * @author Nascimento Paulo Kennedy
  * */
 
-
+//--------------------------------------------------------------
 //Função para porcentagem
 function fporcentagem($data) {
 	
@@ -30,7 +30,7 @@ function fporcentagem($data) {
 
 	require_once(BASE_DIR.'app/views/calculations/'.$data['p'].'.php');
 }
-
+//---------------------------------------------------------------
 //Função Divisão
 
 function fdivisao($data) {

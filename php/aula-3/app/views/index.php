@@ -7,7 +7,8 @@
 </head>
 <body>
 	<div class="container">
-		<div class="row">
+		<div class="row">			
+			<!--Imprime mensagem de erro ou sucesso.-->
 			<div class="col-12 m-4">
 				<?php if (isset($data['msg'])) { ?>
 								<div class="alert alert-<?=$data['type']?> alert-dismissible fade show" role="alert">
@@ -15,6 +16,8 @@
 									  <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
 								</div>
 							<?php } ?>
+
+			<!-- Formulário para digitar o CPF -->
 				<form method="GET" action="">
 					<div class="row">
 						<div class="col-12 	mt-4 mb-4">
@@ -26,6 +29,8 @@
 					</div>
 				</form>
 			</div>
+
+			<!-- Tabela com resultados do Cálculo -->
 			<div class="col-12 col-sm-12 col-md-5 ms-4">
 				<table class="table table-hover table-dark">
 					<thead>

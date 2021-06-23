@@ -65,14 +65,14 @@ require_once(BASE_DIR.'/app/views/header.php');
 				<?php foreach ($resultado as $key => $value) { ?>
 				<tr>
 					<td><?=$key+1?></td>
-					<td><?=$value['Base']?></td>
+					<td><?="R$".formatMoney($value['Base'])?></td>
 					<td><?=$value['Porcentagem'].'%'?></td>
 					<td><?=$value['Desconto']?></td>
 					<td><?=$value['Valor']?></td>
 					<td>
 					<!-- Posso alterar esse button por a para inserir um link como o resultado do foreach
 						<button class="btn btn-warning btn-sm">Parcelar</button>  -->
-						<a class="btn btn-warning btn-sm" href="?p=division&valor=<?=$value['Valor']?>">Parcelar</a>
+						<a class="btn btn-warning btn-sm" href="?p=division&valor=<?=$value['Valor']?>&valor_base=<?=$value['Base']?>">Parcelar</a>
 					</td>
 				</tr>
 				<?php } ?>

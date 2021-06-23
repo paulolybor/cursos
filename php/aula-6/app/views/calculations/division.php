@@ -11,6 +11,7 @@ require_once(BASE_DIR.'/app/views/header.php');
 
 <form class="mt-4 mb-4" method="GET">
 	<input type="hidden" name="p" value="division" />
+	<input type="hidden" name="valor_base" value="<?=isset($_GET['valor_base'])?$_GET['valor_base']:null?>" />
 	<div class="row">
 		<div class="col-12 col-sm-3">
 			<input class="form-control" type="text" name="valor" placeholder="Valor" value="<?=isset($_GET['valor'])?$_GET['valor']:''?>">
@@ -62,7 +63,11 @@ require_once(BASE_DIR.'/app/views/header.php');
 				<td><?=$value['juros']?></td>
 				<td><?=$value['valor_juros']?></td>
 				<td><?=$value['valor_parcela']?></td>
-				<td><?=$value['juros']?></td>
+				<td>
+					<button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+				  	Resultado
+					</button>
+				</td>
 			</tr>
 		<?php } ?>
 		</tbody>
@@ -73,4 +78,5 @@ require_once(BASE_DIR.'/app/views/header.php');
 
 <?php
 //carrega footer
+require_once(BASE_DIR.'/app/views/calculations/parts/comparation.php');
 require_once(BASE_DIR.'/app/views/footer.php');
