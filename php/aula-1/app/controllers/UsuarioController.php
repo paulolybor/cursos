@@ -3,7 +3,7 @@
 $nome = $_POST['nome'];
 $email = 'teste@teste.com';
 $senha = '123456';
-$_view = 'login';
+$_view = 'login-error';
 
 if (isset($_POST)) {
     if($_POST['email']==$email

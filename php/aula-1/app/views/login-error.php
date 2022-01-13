@@ -5,9 +5,10 @@
 	<title>Login</title>
 </head>
 <body>
-	<h1>Acessar o Sistema</h1>
+	<h3>Os Dados Digitados São Inválidos. <br>
+Tente Novamente.</h1>
 	<!--<?=__DIR__;?>-->
-	<form method="POST" action="./app/controllers/UsuarioController.php">
+	<form method="POST" action="./UsuarioController.php">
 		
 		<input type="text" name="nome" placeholder="Seu nome">
 		<br/>
