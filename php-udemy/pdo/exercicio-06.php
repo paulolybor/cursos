@@ -10,7 +10,7 @@ $id = 4;
 
 $stmt -> execute(array($id));
 
-echo "Tem certeze que deseja apagar o ID: " . $id . "? (y/n)<br/>";
+echo "Tem certeza que deseja apagar o ID: " . $id . "? (y/n)<br/>";
 
 $confirm = "y";
 
