@@ -1,0 +1,6 @@
+Meu endereço de E-mail é:
+<script>
+var uname = 'contato' ; 
+var dmain = 'meusite.com.br';
+document.write('<a href="mailto:'+uname+'@'+dmain+'">'+uname+'@'+dmain+'</a>');
+</script>
